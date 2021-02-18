@@ -122,6 +122,7 @@
     min-height: 870px;
     display: block;
     margin: 0 auto;
+    padding-top: 98px;
 }
 
 .smoothies__title{
@@ -132,7 +133,7 @@
     letter-spacing: normal;
     line-height: 40px;
     text-align: center;
-    margin-top: 98px;
+    
 }
 
 .smoothies__text{
@@ -159,6 +160,7 @@
     width: 240px;
     height: 180px;
     text-align: center;
+    border: 1px solid #f6edde;
 }
 
 .smoothies-wrapper__title{
@@ -171,4 +173,77 @@
     letter-spacing: -0.5px;
     text-align: center;
     color: #f2612d;
+}
+
+/*drink*/
+
+.drink{
+    min-height: 800px;
+    background-color: #14826f;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.drink__title{
+    font-family: Muli;
+    font-size: 55px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.09;
+    letter-spacing: -1.1px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.drink__title-modification{
+    color: #cae941;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+.drink__img{
+    position: absolute;
+    bottom: -10%;
+    right: 50%;
+}
+
+.drink__wrapper{
+    padding: 98px 200px;
+}
+
+.drink__list{
+    font-family: 'MuliExtraBold';
+    font-size: 21px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.05;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 68px;
+}
+
+.drink__list-modification{
+    font-family: 'MuliRegular';
+}
+
+.drink__btn{
+    width: 380px;
+    height: 60px;
+    border-radius: 30px;
+    border: solid 2px #f8b231;
+    background-color: #14826f;
+    color: white;
+    font-family: Muli;
+    font-size: 21px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.05;
+    letter-spacing: normal;
+    margin-top: 50px;
 }
