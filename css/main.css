@@ -445,9 +445,6 @@ h2{
 
 }
 
-.blog__wrapper{
-    
-}
 
 .blog__container{
     display: flex;
@@ -500,4 +497,37 @@ h2{
 .blog__text-selection{
     color: #1e1e1e;
     font-weight: 800;
+}
+
+/*instagramm*/
+
+.inst__link{
+    font-size: 24px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: -0.48px;
+    color: #0aa566;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inst__wrap{
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 45px;
+}
+
+.inst__wrapper{
+    flex: 0 0 20%;
+}
+/* footer */
+.footer{
+    min-height: 432px;
+    background-color: #f6ab3b;
+    margin-top: 10px;
 }
