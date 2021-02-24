@@ -49,6 +49,7 @@
                         </li>
                     </ul>
                 </div>
+                <div class="header__line"></div>
                 <div class="header__social">
                     <ul class="header__social-list">
                         <li class="header__social-list-item">
@@ -186,8 +187,10 @@
             <button class="story__btn btn">Who we are</button>
         </div>
 
-        <!--надо оборачивать картинку в див? -->
-        <img class="story__img" src="assets/images/bottle/story-img.png" alt="">
+        <div class="story__block-img">
+            <img class="story__img" src="assets/images/bottle/story-img.png" alt="">
+        </div>
+
 
     </section>
 
@@ -208,7 +211,7 @@
 
         <div class="comments__arrows">
             <img class="comments__arrow-img" src="assets/images/icon/Arrow.png" alt="">
-            <img class="comments__arrow-img" src="" alt="">
+            <img class="comments__arrow-img" src="assets/images/icon/Arrow-left.png" alt="">
         </div>
     </section>
 
@@ -235,7 +238,8 @@
     </section>
 
     <section class="inst">
-        <a class="inst__link" href=""><img class="inst__img" src="" alt="">ashasuperfoods</a>
+        <a class="inst__link" href=""><img class="inst__img" src="assets/images/before/Icon-inst.png"
+                alt="">ashasuperfoods</a>
         <!--  -->
         <div class="inst__wrap">
             <div class="inst__wrapper">
@@ -264,10 +268,10 @@
     <footer class="footer">
         <div class="footer__wrapper">
             <div class="logo footer__logo">
-                <img class="foter__logo-img" src="assets/images/logo/Logo.png" alt="">
+                <img class="footer__logo-img" src="assets/images/logo/Logo.png" alt="">
             </div>
             <div class="footer__information">
-                <h3 class="footer__title">Information</h3>
+                <h4 class="footer__title">Information</h4>
                 <ul class="footer__information-list">
                     <li class="footer__information-item"><a class="footer__information-link" href="">Search</a></li>
                     <li class="footer__information-item"><a class="footer__information-link" href="">Contact us</a></li>
@@ -278,7 +282,7 @@
                 </ul>
             </div>
             <div class="footer__payments payments">
-                <h3 class="footer__title">Payment</h3>
+                <h4 class="footer__title">Payment</h4>
                 <div class="payments__wrap">
                     <img src="assets/images/icon/AMEX.png" alt="" class="payments__img">
                     <img src="assets/images/icon/Apple Pay.png" alt="" class="payments__img">
@@ -292,24 +296,27 @@
                 </div>
             </div>
             <div class="footer__subscribe">
-                <h3 class="footer__title">Don't miss out</h3>
+                <h4 class="footer__title">Don't miss out</h4>
                 <form class="footer__form" action="#">
                     <input class="footer__form-item" type="text" placeholder="Subscribe to our newsletter">
                     <button class="footer__btn btn" type="submit">Follow us</button>
                 </form>
                 <ul class="footer__social-list">
                     <li class="footer__social-item"><a class="footer__social-link" href=""><img
-                                class="footer__social-img" src="" alt=""></a></li>
+                                class="footer__social-img" src="assets/images/icon/social/Facebook-footer.png"
+                                alt=""></a></li>
                     <li class="footer__social-item"><a class="footer__social-link" href=""><img
-                                class="footer__social-img" src="" alt=""></a></li>
+                                class="footer__social-img" src="assets/images/icon/social/Pinterest-footer.png"
+                                alt=""></a></li>
                     <li class="footer__social-item"><a class="footer__social-link" href=""><img
-                                class="footer__social-img" src="" alt=""></a></li>
+                                class="footer__social-img" src="assets/images/icon/social/Instagram-footer.png"
+                                alt=""></a></li>
                 </ul>
             </div>
-            <div class="footer__bottom">
-                <span class="footer__bottom-text">© 2020. All Rights Reserved.</span>
-                <a href="#" class="footer__bottom-btn">Go top</a>
-            </div>
+        </div>
+        <div class="footer__bottom">
+            <span class="footer__bottom-text">© 2020. All Rights Reserved.</span>
+            <a href="#" class="footer__bottom-btn">Go top</a>
         </div>
     </footer>
 
