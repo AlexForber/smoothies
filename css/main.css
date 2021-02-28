@@ -77,6 +77,11 @@ button{
     font-size: 16px;
 }
 
+.main-menu__link:hover{
+    text-decoration: underline;
+    color: #dfd7d7;
+}
+
 .header__right-block{
     display: flex;
     align-items:center;
@@ -679,7 +684,6 @@ button{
 
 .inst__wrapper::before{
     content:url('../assets/images/before/Shadow-inst.png');
-    /*content:url('../assets/images/before/Icon-inst-white.png');*/
     position: absolute;
     bottom: 5%;
     right: 5%;
@@ -708,14 +712,13 @@ button{
 
 .footer__logo-img{
     position: absolute;
-    top: -20px;    
+    top: 45%;    
 }
 
 .footer__wrapper{
     padding: 80px 100px 93px 100px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .footer__information{
@@ -772,15 +775,30 @@ button{
 .footer__form{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
+
+.footer__form::after{
+    content:url('../assets/images/before/Arrow-footer.png');
+    position: absolute;
+    bottom: 10px;
+    left: 28%;
+}
+
+.footer__form::before{
+    content:url('../assets/images/before/letter.png');
+    position: absolute;
+    top: 21px;
+    left: 25px;
+}
+
 
 .footer__form-item{
     width: 495px;
     height: 60px;
     border-radius: 30px;
     background-color: #ffffff;
-    text-align: center;
-
+    padding-left: 63px;
 }
 
 .footer__social-list{
@@ -845,4 +863,17 @@ button{
     text-align: left;
     color: #ffffff;
     font-family: 'MuliBold';
+    
+}
+
+.footer__bottom-btn::after{
+    content: url('../assets/images/before/arrow-footer-top.png');
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #f2662f;
+    position: fixed;
+    box-sizing:border-box;
+    padding: 14px 19px 11px 18px;
+    margin-left: 13px;
 }
