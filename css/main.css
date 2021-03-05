@@ -27,11 +27,12 @@
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'MuliExtraBold';
+    font-size: 10px;
     
 }
 
 h2{
-    font-size: 50px;
+    font-size: 5rem;
     color: #f7ae3b;
 }
 
@@ -45,7 +46,7 @@ button{
 
 .header{
     background: url('../assets/images/bg/header-bg-img.jpg') center center/cover no-repeat;
-    height: 95vh;
+    min-height: 1080px;
     padding-top: 69px;
 }
 
@@ -178,60 +179,70 @@ button{
 /*section smoothies*/
 
 .smoothies{
-    width: 1010px;
-    min-height: 870px;
-    display: block;
-    margin: 0 auto;
-    padding-top: 98px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 137px;
 }
 
 .smoothies__title{
-    color: #f7ae3b;
     font-size: 50px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 40px;
-    text-align: center;
+    font-weight: 800;
+    line-height: 0.8;
+    letter-spacing: -1px;
+    margin-top: 97px;
+    color: #f7ae3b;
     
 }
 
 .smoothies__text{
-    width: 915px;
-    font-size: 18px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 35px;
+    max-width: 915px;
     text-align: center;
+    padding-bottom: 40px;
+    font-size: 18px;
+    line-height: 2;
     color: #1e1e1e;
-    display: block;
-    margin: 0 auto;
     margin-top: 55px;
 }
 
 .smoothies-wrapper{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 88px;
+    justify-content: center;
+    margin-top: 61px;
 }
 
 .smoothies-wrapper__block{
-    width: 240px;
-    height: 180px;
-    text-align: center;
-    border: 1px solid #f6edde;
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 2px solid #f6edde;
 }
 
+.smoothies-wrapper__block:nth-child(-n+4) {
+    border-bottom: 2px solid #f6edde;
+  }
+
+  .smoothies-wrapper__block:nth-child(4) {
+    border-right: none;
+  }
+
+  .smoothies-wrapper__block:last-child {
+    border-right: none;
+  }
+  .smoothies-wrapper__img{
+    padding-top: 40px;
+    margin-bottom: 9px;
+  }
+
 .smoothies-wrapper__title{
-    font-family: Muli;
+    margin-bottom: 20px;
     font-size: 25px;
     font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.6;
     letter-spacing: -0.5px;
-    text-align: center;
     color: #f2612d;
 }
 
@@ -683,17 +694,21 @@ button{
 }
 
 .inst__wrapper::before{
-    content:url('../assets/images/before/Shadow-inst.png');
+    content:"";
+    width: 1px;
+    height: 1px;
     position: absolute;
     bottom: 5%;
     right: 5%;
-
+    border: 1px solid #000;
+    box-shadow: 0px 0px 205px rgb(0, 0, 0);
 }
 
 .inst__wrapper::after{
     content:url('../assets/images/before/Icon-inst-white.png');
     position: absolute;
     bottom: 5%;
+    
     right: 5%;
 }
 /* footer */
@@ -805,7 +820,7 @@ button{
     display: flex;
     list-style: none;
     position: absolute;
-    bottom: -5%;
+    bottom: 0;
     right: 43px;
 
 }
