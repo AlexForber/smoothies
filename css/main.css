@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h2{
-    font-size: 5rem;
+    font-size: 50px;
     color: #f7ae3b;
 }
 
@@ -42,6 +42,7 @@ p{
 
 button{
     font-family: 'MuliBold';
+    border-color: transparent;
 }
 
 .header{
@@ -51,17 +52,27 @@ button{
 }
 
 .header__top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  
     position: relative;
     padding: 0 100px;
 }
 
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__burger-btn{
+    height: 50px;
+    width: 40px;
+}
+
 .header__logo{
     position: absolute;
-    left: 44%;
-    top: 10%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .main-menu__list{
@@ -163,17 +174,23 @@ button{
     text-align: left;
     padding-left: 39px;
     color: #fff;
+    position: relative;
 }
 
 .header__content-btn::before{
     content:url('../assets/images/icon/Arrow.png');
     position: absolute;
-    right: 45%;
+    right: 15%;
 }
 
 .btn--green{
     background-color: #0aa566;
 
+}
+
+.header__content-btn:hover{
+    border: 1px solid rgb(6, 189, 6);
+    background-color: #097047 ;
 }
 
 /*section smoothies*/
@@ -330,6 +347,11 @@ button{
     position: relative;
 }
 
+.drink__btn:hover{
+    background-color: #113832;
+    border: solid 2px #cc8605;
+}
+
 .drink__btn::before{
     content:url('../assets/images/icon/Arrow.png');
     position: absolute;
@@ -342,11 +364,10 @@ button{
     justify-content: space-around;
     min-height: 720px;
     align-self: center;
+    overflow-x: auto;
 }
 
 .product__intro{
-    width: 480px;
-    height: 720px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -399,6 +420,11 @@ button{
     text-align: left;
     padding-left: 36px;
     margin-top: 65px;
+}
+
+.product__btn:hover{
+    border-color:rgb(212, 253, 212);
+    border: solid 3px #ffffff;
 }
 
 .product__btn::before{
@@ -463,6 +489,11 @@ button{
     text-align: left;
     padding-left: 30px;
 }
+
+.story__btn:hover{
+    background-color: #118a5a;
+}
+
 
 .story__btn::before{
     content:url('../assets/images/icon/Arrow.png');
@@ -674,6 +705,10 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.inst__link:hover{
+    text-decoration: underline;
 }
 
 .inst__img{
@@ -891,4 +926,12 @@ button{
     box-sizing:border-box;
     padding: 14px 19px 11px 18px;
     margin-left: 13px;
+}
+
+
+@media screen and (max-width: 768px){
+    .header__navbar{
+        display: none;
+    }
+
 }
