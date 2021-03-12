@@ -1028,6 +1028,7 @@ button{
     /* drink */
 
     .drink{
+        justify-content: center;
         padding: 0 35px;
     }
 
@@ -1057,6 +1058,12 @@ button{
         content: none;
 
 }
+
+    /* product */
+    .product{
+        justify-content: flex-start;
+    }
+
     /*blog*/
 
     .blog__wrap::after{
