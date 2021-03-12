@@ -1025,7 +1025,38 @@ button{
         border: none;
     }
 
+    /* drink */
 
+    .drink{
+        padding: 0 35px;
+    }
+
+    
+    .drink__img {
+        display: none;
+    }
+
+    .drink__btn{
+        width: 250px;
+        font-size: 13px;
+    }
+
+    .drink__wrapper{
+        padding: 0;
+    }
+
+    .drink__list{
+        font-size: 16px;
+    }
+
+    .drink__title{
+        font-size: 45px;
+    }
+
+    .drink__title-modification::before {
+        content: none;
+
+}
     /*blog*/
 
     .blog__wrap::after{
