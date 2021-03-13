@@ -1064,6 +1064,39 @@ button{
         justify-content: flex-start;
     }
 
+    .story{
+        flex-direction: column-reverse;
+    }
+
+    .story__block{
+        margin: 0;
+    }
+
+    .story__title{
+        text-align: center;
+    }
+
+    .story__text{
+        text-align: center;
+    }
+
+    .story__img{
+        width: 320px;
+    }
+
+    .story__block-img::before {
+        content: none;
+    }
+
+    
+
+    .story__btn {
+        width: 250px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
     /*blog*/
 
     .blog__wrap::after{
