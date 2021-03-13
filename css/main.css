@@ -1096,6 +1096,33 @@ button{
         margin: 0 auto;
     }
 
+    /*comments*/
+
+    .comments::before{
+        content: none;
+    }
+
+    .comments__title{
+        display: block;
+        font-size: 40px;
+        line-height: 1.8;
+    }
+
+    .comments__wrapper{
+        display: block;
+        margin-top: 80px;
+    }
+
+    .comments__wrapper::before{
+        content: none;
+    }
+
+    .comments__arrows {
+        display: block;
+        margin: 0 auto;
+        margin-top: 85px;
+    }
+
 
     /*blog*/
 
