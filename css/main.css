@@ -1117,6 +1117,11 @@ button{
         content: none;
     }
 
+    .comments__img {
+        display: block;
+        margin: 0 auto;
+    }
+
     .comments__arrows {
         display: block;
         margin: 0 auto;
@@ -1125,6 +1130,24 @@ button{
 
 
     /*blog*/
+
+    .blog{
+        display: block;
+        padding: 80px 0 80px 0;
+        margin: 0 auto;
+    }
+
+    .blog__title{
+        text-align: center;
+    }
+
+    .blog__img{
+        width: 320px;
+    }
+
+    .blog__text{
+        margin-left: 0;
+    }
 
     .blog__wrap::after{
         content:none;
