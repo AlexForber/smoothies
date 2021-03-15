@@ -1,3 +1,5 @@
+// out: ./main.min.css, compress: true, sourceMap: true 
+
 @font-face{
     font-family: 'MuliRegular';
     src: url('../assets/fonts/Muli-Regular.ttf') format('truetype');
@@ -52,153 +54,18 @@ button{
     border-color: transparent;
 }
 
-.header{
-    background: url('../assets/images/bg/header-bg-img.jpg') center center/cover no-repeat;
-    min-height: 1080px;
-    padding-top: 69px;
-}
-
-.header__top{
-  
-    position: relative;
-    padding: 0 100px;
-}
-
-.header__navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__burger-btn{
-    height: 50px;
-    width: 40px;
-}
-
-.header__logo{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -66%);
-}
-
-.main-menu__list{
-    display: flex;
-    justify-content: space-between; 
-    list-style-type: none; 
-}
-
-.main-menu__link{
-    text-decoration: none;
-    margin-right: 35px; 
-    color: #fff;
-    font-family: 'MuliRegular';
-    font-size: 1.6rem;
-}
-
-.main-menu__link:hover{
-    text-decoration: underline;
-    color: #dfd7d7;
-}
-
-.header__right-block{
-    display: flex;
-    align-items:center;
-    position: relative;
-}
-
-.personal__list{
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    position: relative;
-    
-}
-
-.personal__list-item{
-    margin-right: 46px;
-}
 
 
-.personal__round-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 18px;
-    height: 18px;
-    background-color:#fff;
-    border-radius: 100%;
-    position: absolute;
-    right: 14%;
-    top: -12px;
-}
 
-.header__line::after{
-    content: url('../assets/images/before/Line-header.png');
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    
 
-}
 
-.header__social{
-    margin-left: 136px;
-}
 
-.header__social-round{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35px;
-    height: 35px;
-    background-color: #ffffff;
-    border-radius: 100%;
-    margin-right: 10px;
-}
 
-.header__social-list{
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-}
 
-.header__content{
-    display: flex;
-    justify-content: center;
-}
 
-.header__content-btn{
-    width: 280px;
-    height: 70px;
-    border-radius: 35px;
-    margin-top: 120px;
-    font-size: 24px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 40px;
-    text-align: left;
-    padding-left: 39px;
-    color: #fff;
-    position: relative;
-}
 
-.header__content-btn::before{
-    content:url('../assets/images/icon/Arrow.png');
-    position: absolute;
-    right: 15%;
-}
 
-.btn--green{
-    background-color: #0aa566;
 
-}
-
-.header__content-btn:hover{
-    border: 1px solid rgb(6, 189, 6);
-    background-color: #097047 ;
-}
 
 /*section smoothies*/
 
@@ -952,58 +819,7 @@ button{
 
 
 @media screen and (max-width: 768px){
-    .header {
-        background: rgb(184,238,174);
-        background: linear-gradient(90deg, rgba(184,238,174,1) 0%, rgba(4,165,99,1) 100%);
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .header__navbar{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .main-menu__list{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 40px;
-    }
-
-    .main-menu__list-item{
-        margin-top: 25px;
-    }
-
-    .header__logo{
-        top: 0;
-        left: 50%;
-    }
-
-    .header__right-block{
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-    }
-
-    .header__content{
-        display: none;
-    }
-    .header__line{
-        display: none;
-    }
-
-    .header__social{
-        margin: 0;
-    }
-
-    .header__social-list{
-        padding: 0;
-    }
-
-    /*smoothies*/
+     /*smoothies*/
     
     .smoothies__title{
         text-align: center;
@@ -1198,3 +1014,7 @@ button{
 
 }
 
+@import './blocks/_header.less';
+@import './blocks/_main-menu.less';
+@import './blocks/_personal.less';
+@import './blocks/_button.less';
