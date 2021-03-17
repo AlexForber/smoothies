@@ -1,0 +1,74 @@
+// main: ./../main.less
+
+.circular-menu{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.circular-menu__item{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    font-size: 8px;
+    align-items:center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #f6f6f6;
+    background-color: transparent;
+    transition:  0.3s;
+    outline: none;
+}
+
+.circular-menu__button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(184,238,174,1) 0%, rgba(4,165,99,1) 100%);
+    outline: none;  
+}
+
+
+.circular-menu__lines,
+.circular-menu__lines::before,
+.circular-menu__lines::after {
+
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: #f6f6f9;
+    transition:  0.3s;
+}
+
+.circular-menu__lines {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+
+.circular-menu__lines::before{
+    content: '';
+}
+
+.circular-menu__lines::after{
+    content: '';
+    transform: rotate(90deg);
+}
+
+.circular-menu__button_active .circular-menu__lines::before{
+    transform: rotate(45deg);
+}
+
+.circular-menu__button_active .circular-menu__lines::after{
+    transform: rotate(-45deg);
+}
