@@ -1,0 +1,59 @@
+// main: ./../main.less
+
+@media screen and (max-width: 768px){
+    .header {
+        background: rgb(184,238,174);
+        background: linear-gradient(90deg, rgba(184,238,174,1) 0%, rgba(4,165,99,1) 100%);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__top {
+            position: relative;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__navbar{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    
+        &__logo{
+            top: 0;
+            left: 50%;
+        }
+    
+        &__right-block{
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+    
+        &__content{
+            display: none;
+        }
+        &__line{
+            display: none;
+        }
+    
+        &__social{
+            margin: 0;
+        }
+    
+        &__social-list{
+            padding: 0;
+        }
+    }
+
+    .main-menu{
+        display: none;
+    }
+
+   
+}
+

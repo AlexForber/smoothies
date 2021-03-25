@@ -4,91 +4,94 @@
     background: url('../assets/images/bg/header-bg-img.jpg') center center/cover no-repeat;
     min-height: 1080px;
     padding-top: 69px;
+
+    &__top{
+        position: relative;
+        padding: 0 100px;
+    }
+    &__navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -166%);
+    }
+    
+    &__right-block{
+        display: flex;
+        align-items:center;
+        position: relative;
+    }
+    
+    &__social{
+        margin-left: 136px;
+    }
+    
+    &__social-round{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+    
+    
+        background-color: #ffffff;
+        border-radius: 100%;
+        margin-right: 10px;
+    }
+    
+    &__social-list{
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+    
+    &__content{
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__content-btn{
+        width: 280px;
+        height: 70px;
+        margin-top: 120px;
+        font-size: 24px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 40px;
+        text-align: left;
+        padding-left: 39px;
+        color: #fff;
+        position: relative;
+        border-radius: 35px;
+
+        &::before{
+            content:url('../assets/images/icon/Arrow.png');
+            position: absolute;
+            right: 15%;   
+        }
+
+        &:hover{
+            border: 1px solid rgb(6, 189, 6);
+            background-color: #097047 ;
+        }
+    }
+    
+    &__line::after{
+        content: url('../assets/images/before/Line-header.png');
+        position: absolute;
+        top: 25%;
+        left: 50%;
+    }
 }
 
-.header__top{
-  
-    position: relative;
-    padding: 0 100px;
-}
-
-.header__navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__logo{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -166%);
-}
-
-.header__right-block{
-    display: flex;
-    align-items:center;
-    position: relative;
-}
-
-.header__social{
-    margin-left: 136px;
-}
-
-.header__social-round{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35px;
-    height: 35px;
-    background-color: #ffffff;
-    border-radius: 100%;
-    margin-right: 10px;
-}
-
-.header__social-list{
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-}
-
-.header__content{
-    display: flex;
-    justify-content: center;
-}
-
-.header__content-btn{
-    width: 280px;
-    height: 70px;
-    border-radius: 35px;
-    margin-top: 120px;
-    font-size: 24px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 40px;
-    text-align: left;
-    padding-left: 39px;
-    color: #fff;
-    position: relative;
-}
-
-.header__line::after{
-    content: url('../assets/images/before/Line-header.png');
-    position: absolute;
-    top: 25%;
-    left: 50%;
-}
 
 
-.header__content-btn::before{
-    content:url('../assets/images/icon/Arrow.png');
-    position: absolute;
-    right: 15%;
-}
 
-.header__content-btn:hover{
-    border: 1px solid rgb(6, 189, 6);
-    background-color: #097047 ;
-}
+
 

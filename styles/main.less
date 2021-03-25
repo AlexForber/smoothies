@@ -2,20 +2,19 @@
 
 @import './blocks/_fonts.less';
 
-*{
-    box-sizing:border-box;
-}
 
-html,
-body{
+html {
     font-family: 'MuliRegular', sans-serif;
     font-size: 10px;
+
+}
+
+* {
+    box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'MuliExtraBold', sans-serif;
-    font-size: 10px;
-    
 }
 
 h2{
@@ -23,9 +22,6 @@ h2{
     color: #f7ae3b;
 }
 
-p{
-    font-family: 'MuliRegular', sans-serif;
-}
 /*section smoothies*/
 
 .smoothies{
@@ -36,7 +32,6 @@ p{
 }
 
 .smoothies__title{
-    font-size: 50px;
     font-weight: 800;
     line-height: 0.8;
     letter-spacing: -1px;
@@ -108,8 +103,8 @@ p{
 }
 
 .drink__title{
-    font-family: Muli;
-    font-size: 55px;
+    font-family: 'Muli' ;
+    font-size: 5.5rem;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -247,6 +242,7 @@ p{
     width: 204px;
     height: 60px;
     border-radius: 30px;
+    font-size: 21px;
     border: solid 2px #ffffff;
     background-color: transparent;
     color: white;
@@ -1223,3 +1219,9 @@ p{
 @import './blocks/_personal.less';
 @import './blocks/_button.less';
 @import './blocks/_circular-menu.less';
+@import './blocks/_mediaMaxW768.less';
+@import './blocks/_mediaMaxW1024.less';
+@import './blocks/_mediaMaxW1279.less';
+@import './blocks/_mediaMaxW1440.less';
+@import './blocks/_mediaMaxW1600.less';
+
