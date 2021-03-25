@@ -1,0 +1,82 @@
+// main: ./../main.less
+
+.story{
+    min-height: 881px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+    &__block{
+        margin-right: 208px;
+    }
+    
+    &__title{
+        font-family: 'MuliExtraBold';
+        font-size: 50px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.8;
+        letter-spacing: -1px;
+        text-align: left;
+        color: #f7ae3b;
+    }
+    
+    &__text{
+        font-family: 'MuliRegular';
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.94;
+        letter-spacing: normal;
+        text-align: left;
+        color: #1e1e1e;
+        margin-top: 43px;
+    }
+    
+    &__btn{
+        font-family: 'MuliExtraBold';
+        font-size: 21px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.05;
+        letter-spacing: normal;
+        color: #fff;
+        width: 301px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: #0aa566;
+        margin-top: 60px;
+        position: relative;
+        text-align: left;
+        padding-left: 30px;
+
+        &:hover{
+            background-color: #118a5a;
+        }
+        
+        
+        &::before{
+            content:url('../assets/images/icon/Arrow.png');
+            position: absolute;
+            right: 15%;
+        }
+    }
+    
+    &__block-img{
+        position: relative;
+
+        &::before{
+            content:url('../assets/images/before/Stamp.png');
+            position: absolute;
+            left: -30%;
+            top: 20px;
+        }
+    }
+    
+    
+    
+}
+

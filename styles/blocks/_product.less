@@ -1,0 +1,81 @@
+// main: ./../main.less
+
+.product{
+    display: flex;
+    justify-content: space-around;
+    min-height: 720px;
+    align-self: center;
+    overflow-x: auto;
+
+    &__intro{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+
+        &:first-child{
+            background-color: #632b17;
+        }
+        
+        &:nth-child(2){
+            background-color: #178670;
+        }
+        
+        &:nth-child(3){
+            background-color: #f7ae3b;
+        }
+        
+        &:last-child{
+            background-color: #c3471b;
+        }
+        
+    }
+    
+    
+    
+    &__title{
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.92;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+    
+    &__selection{
+        font-size: 21px;
+        font-style: italic;
+        color: #fff;
+    }
+    
+    &__btn{
+        width: 204px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 21px;
+        border: solid 2px #ffffff;
+        background-color: transparent;
+        color: white;
+        position: relative;
+        text-align: left;
+        padding-left: 36px;
+        margin-top: 65px;
+
+        &:hover{
+            border-color:rgb(212, 253, 212);
+            border: solid 3px #ffffff;
+        }
+        
+        &::before{
+            content:url('../assets/images/before/Arrow-white.png');
+            position: absolute;
+            right: 15%;
+        }
+    }
+    
+   
+}
+

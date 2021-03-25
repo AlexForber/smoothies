@@ -21,169 +21,8 @@ h2{
     font-size: 5rem;
     color: #f7ae3b;
 }
-
-/*section smoothies*/
-
-
-
-/*drink*/
-
-
-
-/*product's */
-.product{
-    display: flex;
-    justify-content: space-around;
-    min-height: 720px;
-    align-self: center;
-    overflow-x: auto;
-}
-
-.product__intro{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
-    
-}
-
-.product__intro:first-child{
-    background-color: #632b17;
-}
-
-.product__intro:nth-child(2){
-    background-color: #178670;
-}
-
-.product__intro:nth-child(3){
-    background-color: #f7ae3b;
-}
-
-.product__intro:last-child{
-    background-color: #c3471b;
-}
-
-.product__title{
-    font-size: 24px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.92;
-    letter-spacing: normal;
-    text-align: center;
-    color: #ffffff;
-}
-
-.product__selection{
-    font-size: 21px;
-    font-style: italic;
-    color: #fff;
-}
-
-.product__btn{
-    width: 204px;
-    height: 60px;
-    border-radius: 30px;
-    font-size: 21px;
-    border: solid 2px #ffffff;
-    background-color: transparent;
-    color: white;
-    position: relative;
-    text-align: left;
-    padding-left: 36px;
-    margin-top: 65px;
-}
-
-.product__btn:hover{
-    border-color:rgb(212, 253, 212);
-    border: solid 3px #ffffff;
-}
-
-.product__btn::before{
-    content:url('../assets/images/before/Arrow-white.png');
-    position: absolute;
-    right: 15%;
-}
-
 /*story*/
-.story{
-    min-height: 881px;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    
-}
 
-.story__block{
-    margin-right: 208px;
-}
-
-.story__title{
-    font-family: 'MuliExtraBold';
-    font-size: 50px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.8;
-    letter-spacing: -1px;
-    text-align: left;
-    color: #f7ae3b;
-}
-
-.story__text{
-    font-family: 'MuliRegular';
-    font-size: 18px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.94;
-    letter-spacing: normal;
-    text-align: left;
-    color: #1e1e1e;
-    margin-top: 43px;
-}
-
-.story__btn{
-    font-family: 'MuliExtraBold';
-    font-size: 21px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.05;
-    letter-spacing: normal;
-    color: #fff;
-    width: 301px;
-    height: 60px;
-    border-radius: 30px;
-    background-color: #0aa566;
-    margin-top: 60px;
-    position: relative;
-    text-align: left;
-    padding-left: 30px;
-}
-
-.story__btn:hover{
-    background-color: #118a5a;
-}
-
-
-.story__btn::before{
-    content:url('../assets/images/icon/Arrow.png');
-    position: absolute;
-    right: 15%;
-}
-
-.story__block-img{
-    position: relative;
-}
-
-.story__block-img::before{
-    content:url('../assets/images/before/Stamp.png');
-    position: absolute;
-    left: -30%;
-    top: 20px;
-}
 
 /* comments */
 .comments{
@@ -1062,12 +901,18 @@ h2{
 @import './blocks/_personal.less';
 @import './blocks/_button.less';
 @import './blocks/_circular-menu.less';
+@import './blocks/_smoothies.less';
+@import './blocks/_about.less';
+@import './blocks/_product.less';
+@import './blocks/_story.less';
+
+
+
+
 @import './blocks/_mediaMaxW768.less';
 @import './blocks/_mediaMaxW1024.less';
 @import './blocks/_mediaMaxW1279.less';
 @import './blocks/_mediaMaxW1440.less';
 @import './blocks/_mediaMaxW1600.less';
-@import './blocks/_smoothies.less';
-@import './blocks/_about.less';
 
 
