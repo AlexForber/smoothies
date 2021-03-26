@@ -54,6 +54,226 @@
         display: none;
     }
 
+    /*smoothies*/
+    
+    .smoothies__title{
+        text-align: center;
+        line-height: 1.3;
+        margin-top: none;
+    }
+
+    .smoothies-wrapper__block{
+        flex-basis: 50%;
+        border: none;
+        text-align: center;
+
+        &:nth-child(-n+4) {
+            border: none;
+        }
+    }
+
+    .smoothies__text{
+        margin: 0;
+    }
+
+    
+
+    /* drink */
+
+    .drink{
+        justify-content: center;
+        padding: 0 35px;
+
+        &__img {
+            display: none;
+        }
+    
+        &__btn{
+            width: 250px;
+            font-size: 13px;
+        }
+    
+        &__wrapper{
+            padding: 0;
+        }
+    
+        &__list{
+            font-size: 16px;
+        }
+    
+        &__title{
+            font-size: 45px;
+        }
+    
+        &__title-modification::before {
+            content: none;
+        }
+    }
+
+    
+    
+
+    /* product */
+    .product{
+        justify-content: flex-start;
+    }
+
+
+    /*story*/
+    .story{
+        flex-direction: column-reverse;
+
+        &__block{
+            margin: 0;
+        }
+
+        &__btn {
+            width: 250px;
+            display: block;
+            margin: 0 auto;
+        }
+    
+        &__title{
+            text-align: center;
+        }
+    
+        &__text{
+            text-align: center;
+        }
+    
+        &__img{
+            width: 320px;
+        }
+    
+        &__block-img::before {
+            content: none;
+        }
+    }
+
+    
+
+    
+
+    /*comments*/
+
+    .comments::before{
+        content: none;
+    }
+
+    .comments__title{
+        display: block;
+        font-size: 40px;
+        line-height: 1.8;
+    }
+
+    .comments__wrapper{
+        display: block;
+        margin-top: 80px;
+
+        &::before{
+            content: none;
+        }
+    }  
+
+    .comments__img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .comments__arrows {
+        margin-top: 85px;
+    }
+
+
+    /*blog*/
+
+    .blog{
+        display: block;
+        padding: 80px 0 80px 0;
+        margin: 0 auto;
+        
+        
+        &__title{
+            text-align: center;
+        }
+
+        &__img{
+            width: 320px;
+        }
+
+        &__text{
+            margin-left: 0;
+        }
+
+        &__wrap::after{
+            content:none;
+        }
+
+        &__container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    
+    /*footer*/
+
+    .footer__wrapper{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 80px 50px 93px 50px;
+    }
+
+    .footer__logo{
+        display: none;
+    }
+
+    .footer__form-item{
+        width: 200px;
+        height: 50px;
+        border-radius: 30px;
+        background-color: #ffffff;
+        padding-left: 63px;
+    }
+
+    .footer__social-list{
+        left: 0;
+        top: 160px;
+    }
+
+    .footer__form::before{
+        content:url('../assets/images/before/letter.png');
+        position: absolute;
+        top: 15px;
+        left: 25px;
+    }
+
+    .footer__form::after{
+        content:none;
+    }
+
+    .footer__btn{
+        text-align: left;
+
+    }
+
+    .payments__img{
+        margin-right: 20px;
+    }
+
+    .footer__bottom-btn{
+        right: 10px;
+        bottom: 20px;
+
+        &::after{
+            right: 10px;
+        }
+    }
+
+   
+
    
 }
 

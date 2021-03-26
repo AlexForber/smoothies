@@ -41,6 +41,122 @@
         margin-top: 10px;
     }
 
+    /*drink*/
+
+    .drink{
+        flex-direction: column-reverse;
+
+        &__wrapper {
+            padding: 20px 80px;
+        }
+        &__img{
+            position: static;
+            transform: rotate(-7deg);
+            width: 585px;
+            padding-bottom: 20px;
+        }
+    }
+
+    
+
+    /*story*/
+
+    .story{
+        flex-direction: column-reverse;
+        padding: 50px;
+
+        &__img{
+            width: 510px;
+        }
+    
+        &__title{
+            text-align: center;
+        }
+    
+        &__block{
+            margin: 0;
+        }
+    }
+
+    
+
+    /*comments*/
+    .comments{
+        padding: 60px 10px 50px 10px;
+
+        &::before {
+            content: ' ';
+        }
+    
+        &__wrapper::before {
+            content: '';
+        }
+    }
+
+    
+
+    /*blog*/
+
+    .blog{
+        padding: 50px 0;
+
+    &g__title{
+            text-align: center;
+        }
+    
+        &__img{
+            width: 750px;
+        }
+    
+        &__wrap::after {
+            content: none;
+        }
+    
+        &__container{
+            flex-direction: column;
+        }
+    
+        &__text{
+            margin-left: 0;
+        }
+    }
+
+    
+
+    /*footer*/
+    .footer__wrapper{
+        padding: 50px 0 30px 0;
+    }
+
+    .footer__logo{
+        margin-right: 190px;
+    }
+
+    .footer__title{
+        text-align: center;
+    }
+
+    .footer__form::after{
+        content: none;
+    }
+
+    .footer__logo-img{
+        width: 180px;
+    }
+
+    .footer__form-item{
+        width: 200px;
+    }
+
+    .footer__social-list{
+        bottom: 65px;
+        right: 45px;
+    }
+
+    .payments__img {
+        margin-right: 10px;
+    }
+
 }
 
 @media only screen and (min-width : 769px) and (max-width : 8000px) {
