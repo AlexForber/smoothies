@@ -1,0 +1,46 @@
+// main: ./../main.less
+
+.inst__link{
+    font-size: 24px;
+    font-weight: 800;
+    font-family: 'Muli-ExtraBold';
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: -0.48px;
+    color: #0aa566;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.inst__img{
+    margin-right: 12px;
+}
+
+.inst__wrap{
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 45px;
+    
+}
+
+.inst__wrapper{
+    flex: 0 0 20%;
+    position: relative;
+
+    &::after{
+        content:url('../assets/images/before/Icon-inst-white.png');
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+    }
+}
+
+

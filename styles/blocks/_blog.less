@@ -1,0 +1,93 @@
+// main: ./../main.less
+
+
+.blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 790px;
+    padding: 99px 0 200px 0;
+
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__wrap{
+        margin-left: 61px;
+        position: relative;
+    
+        &::after{
+            content: '';
+            width: 687px;
+            height: 12px;
+            background-color: #f7ae3b;
+            position: absolute;
+            top: -50px;
+            left: -61px;
+        }
+    }
+    
+    
+    
+    &__short-title{
+        font-size: 3rem;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: -0.6px;
+        color: #f2612d;
+        margin: 0;
+    }
+    
+    &__data{
+        margin-top: 20px;
+        font-size: 1.6rem;
+        font-family: 'MuliRegular';
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.19;
+        letter-spacing: normal;
+        text-align: left;
+        color: #1e1e1e;
+    }
+    
+    &__text{
+        font-family: 'MuliRegular';
+        font-size: 1.8rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.94;
+        letter-spacing: normal;
+        text-align: left;
+        color: #1e1e1e;
+        margin-top: 45px;
+        margin-left: 63px;
+        position: relative;
+    
+        &::before{
+            content:url('../assets/images/before/Arrow-blog.png');
+            position: absolute;
+            bottom: 0;
+            right: 145px;
+        }
+    }
+    
+    
+    
+    &__text-selection{
+        color: #1e1e1e;
+        font-weight: 800;
+    }
+    
+    &__short-title{
+        margin-top: 15px;
+    }
+
+}
+
+
